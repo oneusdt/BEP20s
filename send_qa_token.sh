@@ -23,6 +23,21 @@ npx oz session --network $NETWORK
 
 export RECV=0x7E1B9fC6d74D162b9b7201086271b7D5CB4C0b18
 
+npx oz send-tx --to $USDT --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $BUSD --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $DAI --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $ETH --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $BTCB --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $BCH --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $LTC --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $EOS --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $XRP --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $DOT --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $LINK --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $ONT --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $FOR --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+npx oz send-tx --to $XTZ --method "mint(uint256)" -n $NETWORK --args 10000000000e18
+
 npx oz send-tx --to $USDT --method "transfer(address,uint256)" -n $NETWORK --args $RECV,10000e18
 npx oz send-tx --to $BUSD --method "transfer(address,uint256)" -n $NETWORK --args $RECV,10000e18
 npx oz send-tx --to $DAI --method "transfer(address,uint256)" -n $NETWORK --args $RECV,10000e18
